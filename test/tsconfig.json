@@ -1,0 +1,14 @@
+{
+  "include": [
+    "./**/*.js"
+  ],
+  "exclude": [
+    "./tsBuilt/**",
+    "./unit/mixin.spec.js"
+  ],
+  "compilerOptions": {
+    "outDir": "../tsTest",
+    "allowJs": true,
+    "experimentalDecorators": true
+  }
+}

@@ -78,14 +78,14 @@ describe('@extendDescriptor', function () {
   });
 
   it('extends property initializers', function () {
-    Object.getOwnPropertyDescriptor(Derived.prototype, 'fourth');
+    Object.getOwnPropertyDescriptor(Derived.prototype, 'fourth')
       .enumerable.should.equal(false);
 
     derived.fourth.should.equal('fourth');
   });
 
   it('extends property methods', function () {
-    Object.getOwnPropertyDescriptor(Derived.prototype, 'fifth');
+    Object.getOwnPropertyDescriptor(Derived.prototype, 'fifth')
       .enumerable.should.equal(true);
 
     derived.fifth().should.equal('fourth');

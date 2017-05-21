@@ -13,9 +13,11 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "babel --out-dir lib src && cross-env BABEL_ENV=es babel --out-dir es src",
+    "build": "babel --out-dir lib src && cross-env BABEL_ENV=es babel --out-dir es src && npm run build-ts-test",
     "build-bower": "babel-node scripts/build-bower.js",
-    "test": "npm run build && mocha --compilers js:babel-core/register --require babel-polyfill \"test/**/*.spec.js\""
+    "test": "npm run build && mocha --compilers js:babel-core/register --require babel-polyfill \"test/**/*.spec.js\"",
+    "test-ts": "npm run build-ts-test && mocha --compilers js:babel-core/register --require babel-polyfill \"tsTest/**/*.spec.js\"",
+    "build-ts-test": "cd test && tsc || echo typescript-error-above-is-just-a-warning"
   },
   "repository": {
     "type": "git",
