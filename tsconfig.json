@@ -1,0 +1,14 @@
+{
+  "include": [
+    "src/**/*.js",
+    "test/**/*.js"
+  ],
+  "exclude": [ "lib", "es", "tsc_out", "es_tsc" ],
+  "compilerOptions": {
+    "outDir": "tsc_out",
+    "sourceMap": true,
+    "rootDirs": ["src"],
+    "allowJs": true,
+    "experimentalDecorators": true
+  }
+}
