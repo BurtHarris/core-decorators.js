@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.js",
+  "include": [
+    "./**/*.js"
+  ],
+  "compilerOptions": {
+    "outDir": "../lib_test"
+  }
+}
