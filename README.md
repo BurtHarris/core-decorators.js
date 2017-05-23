@@ -583,7 +583,7 @@ class Foo extends Component {}
 ```
 
 # TypeScript support notes
-While still not officially supported, package.json now supports building and testing core-decorators with the TypeScript compiler (`tsc`);  While strictly experimental, this produces alternate transpiled output in the `tsc_out`, so that we can develop unit tests demonstrating any problems and improve TypeScript support.   Running tests w/ the TypeScript compiler will generate errors, if you want to try it out, use this command.
+While still not officially supported, package.json now supports building and testing core-decorators with the TypeScript compiler (`tsc`);  While strictly experimental, this produces alternate transpiled output in the `lib`, so that we can develop unit tests demonstrating any problems and improve TypeScript support.   Running tests w/ the TypeScript compiler will generate errors, if you want to try it out, use this command.
 ```
 npm run test-tsc
 ```

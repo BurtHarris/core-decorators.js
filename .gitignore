@@ -1,5 +1,5 @@
 /lib/
+/lib_test/
 /es/
-/tsc_out/
 /node_modules/
 /core-decorators.js

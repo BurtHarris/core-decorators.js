@@ -16,11 +16,10 @@
     "build": "babel --out-dir lib src && cross-env BABEL_ENV=es babel --out-dir es src",
     "build-bower": "babel-node scripts/build-bower.js",
     "test": "npm run build && mocha --compilers js:babel-core/register --require babel-polyfill \"test/**/*.spec.js\"",
-    "prebuild-tsc": "rimraf tsc_out",
-    "build-tsc": "tsc || echo NOTE: TypeScript 'errors' are only warnings - script will continue",
-    "postbuild-tsc": "mv tsc_out/src/** tsc_out && rimraf tsc_out/src",
+    "prebuild-tsc": "rimraf es lib lib_test",
+    "build-tsc": "tsc -p src/tsconfig.json || tsc -p test/tsconfig.json || echo NOTE: TypeScript 'errors' are only warnings - script will continue",
     "pretest-tsc": "npm run build-tsc",
-    "test-tsc": "mocha --compilers js:ts-node/register --require babel-polyfill \"tsc_out/**/*.spec.js\""
+    "test-tsc": "mocha --compilers js:ts-node/register --require babel-polyfill \"lib_test/**/*.spec.js\""
   },
   "repository": {
     "type": "git",

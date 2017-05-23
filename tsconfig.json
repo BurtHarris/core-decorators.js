@@ -1,6 +1,7 @@
 {
-
+  "include": ["nothing"],
   "compilerOptions": {
+    "outDir": "foo",
     "sourceMap": true,
     "allowJs": true,
     "experimentalDecorators": true
