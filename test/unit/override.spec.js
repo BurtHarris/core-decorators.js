@@ -1,4 +1,4 @@
-import override from '../../lib/override';
+import override from '../../src/override';
 
 class Parent {
   speak(first, second) {}

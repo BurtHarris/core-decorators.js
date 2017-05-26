@@ -1,4 +1,4 @@
-import readonly from '../../lib/readonly';
+import readonly from '../../src/readonly';
 
 describe('@readonly', function () {
   class Foo {

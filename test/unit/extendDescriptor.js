@@ -1,6 +1,6 @@
-import extendDescriptor from '../../lib/extendDescriptor';
-import enumerable from '../../lib/enumerable';
-import nonenumerable from '../../lib/nonenumerable';
+import extendDescriptor from '../../src/extendDescriptor';
+import enumerable from '../../src/enumerable';
+import nonenumerable from '../../src/nonenumerable';
 
 describe('@extendDescriptor', function () {
   class Base {

@@ -1,7 +1,7 @@
-import applyDecorators from '../../lib/applyDecorators';
-import autobind from '../../lib/autobind';
-import readonly from '../../lib/readonly';
-import enumerable from '../../lib/enumerable';
+import applyDecorators from '../../src/applyDecorators';
+import autobind from '../../src/autobind';
+import readonly from '../../src/readonly';
+import enumerable from '../../src/enumerable';
 
 describe('applyDecorators() helper', function () {
   class Foo {

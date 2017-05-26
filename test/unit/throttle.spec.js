@@ -1,5 +1,5 @@
 import { useFakeTimers } from 'sinon';
-import throttle from '../../lib/throttle';
+import throttle from '../../src/throttle';
 
 const defaultValue = {};
 

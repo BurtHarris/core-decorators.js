@@ -1,4 +1,4 @@
-import mixin from '../../lib/mixin';
+import mixin from '../../src/mixin';
 
 const BarMixin = {
   stuff1: 'stuff1',

@@ -1,5 +1,5 @@
 import { useFakeTimers } from 'sinon';
-import debounce from '../../lib/debounce';
+import debounce from '../../src/debounce';
 
 class Editor {
   counter = 0;

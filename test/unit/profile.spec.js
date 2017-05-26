@@ -1,6 +1,6 @@
 import { spy, useFakeTimers } from 'sinon';
-import applyDecorators from '../../lib/applyDecorators';
-import profile, { defaultConsole } from '../../lib/profile';
+import applyDecorators from '../../src/applyDecorators';
+import profile, { defaultConsole } from '../../src/profile';
 
 const CONSOLE_PROFILE = defaultConsole.profile;
 const CONSOLE_PROFILEEND = defaultConsole.profileEnd;

@@ -1,4 +1,4 @@
-import decorate from '../../lib/decorate';
+import decorate from '../../src/decorate';
 import { memoize } from 'lodash';
 
 describe('@decorate', function () {
