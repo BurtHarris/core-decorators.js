@@ -3,7 +3,7 @@ import path from 'path';
 import glob from 'glob';
 import toCamelCase from 'camelcase';
 import interopRequire from 'interop-require';
-import * as decorators from '../';
+import * as decorators from '../src/core-decorators';
 
 const should = chai.should();
 
@@ -13,7 +13,7 @@ const aliases = {
 };
 
 describe('Main package exports', function () {
-  const libPath = path.normalize(`${__dirname}/../lib`);
+  const libPath = path.normalize(`${__dirname}/../src`);
   let filePaths;
 
   beforeEach(function () {
