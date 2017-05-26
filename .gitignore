@@ -1,5 +1,4 @@
 /lib/
-/lib_test/
-/es/
+/es*/
 /node_modules/
 /core-decorators.js

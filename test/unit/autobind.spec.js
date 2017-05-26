@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import autobind from '../../lib/autobind';
+import { autobind } from '../..';
 
 const root = (typeof window !== 'undefined') ? window : global;
 

@@ -1,5 +1,5 @@
 import { stub } from 'sinon';
-import memoize from '../../lib/memoize';
+import {memoize} from '../..';
 
 describe('@memoize', function () {
   var Foo, work, run;

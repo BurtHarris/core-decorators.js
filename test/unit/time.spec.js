@@ -1,6 +1,6 @@
 import { spy } from 'sinon';
-import time, { defaultConsole } from '../../lib/time';
-
+import time from '../..';
+const defaultConsole = time.defaultConsole; 
 const CONSOLE_TIME = defaultConsole.time;
 const CONSOLE_TIMEEND = defaultConsole.timeEnd;
 
