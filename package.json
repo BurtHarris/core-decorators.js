@@ -19,7 +19,7 @@
     "build-es5": "rimraf es5 && tsc --outDir es5 --target es5 || exit 0",
     "build-es2015": "rimraf es2015 && tsc --outDir es2015 --target es2015 --module es2015 || exit 0",
     "build-tsc": "npm run build-es5 && npm run build-es2015 || echo Why did this error?",
-    "test-tsc": "npm run build-es5 && mocha --require source-map-support/register \"es5/test/**/*.spec.js\""
+    "test-tsc": "mocha --debug-brk  --require source-map-support/register \"es5/test/**/*.spec.js\" $1 $2 $3* "
   },
   "repository": {
     "type": "git",

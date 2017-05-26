@@ -1,13 +1,14 @@
 {
-  "include": ["index.js", "src/private/utils.ts", "src/*.js", "test/**/*.js"],
-  "exclude": ["scripts", "lib", "es*", "node_modules", "test/debounce.spec.js" ],
+  "include": ["index.js", "src/private/utils.ts", "src/*.js", "test/**/*.?s"],
+  "exclude": ["scripts", "lib", "es*", "node_modules" ],
   "compilerOptions": {
     "outDir": "es5",
     "target": "es5",
     "module":"commonjs",
     "sourceMap": true,
     "allowJs": true,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true
   },
   "compileOnSave": true
 }
