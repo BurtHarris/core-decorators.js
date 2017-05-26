@@ -9,7 +9,7 @@ export const defaultConsole = {
   },
   timeEnd: console.timeEnd ? console.timeEnd.bind(console) : label => {
     const timeNow = new Date();
-    const timeTaken = timeNow - (labels[label] as Date);
+    const timeTaken = timeNow - labels[label];
     delete labels[label];
     console.log(`${label}: ${timeTaken}ms`);
   }
